@@ -1,8 +1,10 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'airbnb',
     'airbnb/hooks',
     'plugin:react/recommended',
@@ -31,17 +33,29 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react', 'react-hooks'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
     'react/jsx-filename-extension': [
       'error',
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
     'max-len': ['error', 120],
-    'no-use-before-define': [
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+    ],
+    '@typescript-eslint/naming-convention': [
       'error',
       {
-        variables: false,
+        selector: 'interface',
+        format: ['PascalCase'],
+        custom: {
+          regex: '^I[A-Za-z]',
+          match: false,
+        },
       },
     ],
   },
