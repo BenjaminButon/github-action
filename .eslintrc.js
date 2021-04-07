@@ -58,5 +58,8 @@ module.exports = {
         },
       },
     ],
+    'react/react-in-jsx-scope': 'off',
+    'explicit-module-boundary-types': 'off',
+    'arrow-body-style': 'off',
   },
 }

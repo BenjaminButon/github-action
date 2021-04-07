@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -13,7 +14,7 @@ const Home = () => {
         <h1 className="title">
           Read{' '}
           <Link href="/posts/first-post">
-            <a>this page!</a>
+            <p>this page!</p>
           </Link>
         </h1>
 
@@ -38,16 +39,6 @@ const Home = () => {
           >
             <h3>Examples &rarr;</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
           </a>
         </div>
       </main>

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint ./src/** ./pages/** -c .eslintrc.js --ext js,jsx,ts,tsx",
-    "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.js --fix --ext js,jsx,ts,tsx",
+    "lint-fix": "eslint ./src/** ./pages/** -c .eslintrc.js --fix --ext js,jsx,ts,tsx",
     "prettier-format": "prettier --config .prettierrc.js 'src/**/*.ts' --write"
   },
   "dependencies": {
@@ -30,7 +30,14 @@
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run prettier-format",
+      "npm run lint-fix"
+    ]
   }
 }
