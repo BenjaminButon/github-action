@@ -20,11 +20,12 @@
     "@components/*": ["./src/components/*"],
     "@views/*": ["./src/views/*"],
     "@pages/*": ["./src/pages/*"],
-    "@styles/*": ["./src/scss/*"],
+    "@styles/*": ["./src/styles/*"],
     "@utils/*": ["./src/utils/*"],
     "@redux/*": ["./src/redux/*"],
     "@services/*": ["./src/services/*"],
-    "@assets/*": ["./src/assets/*"]
+    "@assets/*": ["./src/assets/*"],
+    "@public": ["../public/*"]
   },
   "exclude": ["node_modules"]
 }

@@ -35,6 +35,7 @@ module.exports = {
     },
   },
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  // ignorePatterns: ['*.scss'],
   rules: {
     'react/jsx-filename-extension': [
       'error',
@@ -62,5 +63,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'explicit-module-boundary-types': 'off',
     'arrow-body-style': 'off',
+    'import/no-unresolved': ['error', { ignore: ['.css', '.scss', '.sass'] }],
   },
 }

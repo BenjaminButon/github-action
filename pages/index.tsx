@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import styles from '@styles/style.module.scss'
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       </Head>
 
       <main>
-        <h1 className="title">
+        <h1 className={styles.title}>
           Read{' '}
           <Link href="/posts/first-post">
             <p>this page!</p>
