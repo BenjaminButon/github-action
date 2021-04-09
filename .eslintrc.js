@@ -33,9 +33,11 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/resolver': {
+      typescript: {},
+    },
   },
   plugins: ['react', 'react-hooks', '@typescript-eslint'],
-  // ignorePatterns: ['*.scss'],
   rules: {
     'react/jsx-filename-extension': [
       'error',
@@ -64,5 +66,6 @@ module.exports = {
     'explicit-module-boundary-types': 'off',
     'arrow-body-style': 'off',
     'import/no-unresolved': ['error', { ignore: ['.css', '.scss', '.sass'] }],
+    'jsx-a11y/anchor-is-valid': 'off',
   },
 }
