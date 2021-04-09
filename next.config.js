@@ -4,16 +4,15 @@ const config = {
   webpack: (config, { defaultLoaders }) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@components': path.join(__dirname, 'src/components'),
-      '@views': path.join(__dirname, 'src/views'),
-      '@styles': path.join(__dirname, 'src/styles'),
-      '@utils': path.join(__dirname, 'src/utils'),
-      '@services': path.join(__dirname, 'src/services'),
-      '@redux': path.join(__dirname, 'src/redux'),
-      '@public': path.join(__dirname, './public'),
-      '@interfaces': path.join(__dirname, 'src/interfaces'),
-      '@pages': path.join(__dirname, 'src/pages'),
       '@assets': path.join(__dirname, 'src/assets'),
+      '@components': path.join(__dirname, 'src/components'),
+      '@hooks': path.join(__dirname, 'src/hooks'),
+      '@pages': path.join(__dirname, 'src/pages'),
+      '@public': path.join(__dirname, './public'),
+      '@services': path.join(__dirname, 'src/services'),
+      '@store': path.join(__dirname, 'src/store'),
+      '@utils': path.join(__dirname, 'src/utils'),
+      '@views': path.join(__dirname, 'src/views'),
     }
 
     config.module.rules.push({
