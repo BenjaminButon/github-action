@@ -22,7 +22,7 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2021,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
@@ -67,5 +67,12 @@ module.exports = {
     'arrow-body-style': 'off',
     'import/no-unresolved': ['error', { ignore: ['.css', '.scss', '.sass'] }],
     'jsx-a11y/anchor-is-valid': 'off',
+    'import/order': [
+      'warn',
+      {
+        alphabetize: { order: 'asc' },
+        groups: [['builtin', 'external', 'internal']],
+      },
+    ],
   },
 }
