@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx,jsx}'",
     "lint-fix": "eslint --fix",
-    "prettier-format": "prettier ./src/** --write",
+    "prettier-format": "prettier --write",
     "stylelint": "stylelint ./src/**/*.{css,scss,sass,less}",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "^10.0.0",
