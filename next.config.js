@@ -35,6 +35,7 @@ const config = {
   future: {
     webpack5: true,
   },
+  reactStrictMode: true,
 }
 
 module.exports = config
