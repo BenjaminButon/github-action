@@ -16,15 +16,18 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "paths": {
-    "@assets/*": ["./src/assets/*"],
-    "@components/*": ["./src/components/*"],
-    "@hooks/*": ["./src/hooks/*"],
+    "@boot/*": ["./src/ui/utils/*"],
+    "@components/*": ["./src/ui/components/*"],
+    "@config/*": ["./src/core/config/*"],
+    "@hooks/*": ["./src/ui/hooks/*"],
     "@pages/*": ["./src/pages/*"],
     "@public/*": ["./public/*"],
-    "@services/*": ["./src/services/*"],
-    "@store/*": ["./src/store/*"],
-    "@utils/*": ["./src/utils/*"],
-    "@views/*": ["./src/views/*"]
+    "@services/*": ["./src/core/services/*"],
+    "@store/*": ["./src/core/store/*"],
+    "@styles/*": ["./src/ui/styles/*"],
+    "@typings/*": ["./src/core/typings/*"],
+    "@utils/*": ["./src/core/utils/*"],
+    "@views/*": ["./src/ui/views/*"]
   },
   "exclude": ["node_modules"]
 }

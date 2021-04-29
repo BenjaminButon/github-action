@@ -1,32 +1,22 @@
 const path = require('path')
 
 const config = {
-  webpack: (config, { defaultLoaders }) => {
+  webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@assets': path.join(__dirname, 'src/assets'),
-      '@components': path.join(__dirname, 'src/components'),
-      '@hooks': path.join(__dirname, 'src/hooks'),
+      '@boot': path.join(__dirname, 'src/ui/boot'),
+      '@components': path.join(__dirname, 'src/ui/components'),
+      '@config': path.join(__dirname, 'src/core/config'),
+      '@hooks': path.join(__dirname, 'src/ui/hooks'),
       '@pages': path.join(__dirname, 'src/pages'),
       '@public': path.join(__dirname, './public'),
-      '@services': path.join(__dirname, 'src/services'),
-      '@store': path.join(__dirname, 'src/store'),
-      '@utils': path.join(__dirname, 'src/utils'),
-      '@views': path.join(__dirname, 'src/views'),
+      '@services': path.join(__dirname, 'src/core/services'),
+      '@store': path.join(__dirname, 'src/core/store'),
+      '@styles': path.join(__dirname, 'src/ui/styles'),
+      '@typings': path.join(__dirname, 'src/core/typings'),
+      '@utils': path.join(__dirname, 'src/core/utils'),
+      '@views': path.join(__dirname, 'src/ui/views'),
     }
-
-    config.module.rules.push({
-      test: /\.s?(c|a)ss$/,
-      use: [
-        defaultLoaders.babel,
-        {
-          loader: require('styled-jsx/webpack').loader,
-          options: {
-            type: (fileName, { query }) => query.type || 'scoped',
-          },
-        },
-      ],
-    })
     return config
   },
   experimental: {
