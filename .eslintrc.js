@@ -71,7 +71,8 @@ module.exports = {
       'warn',
       {
         alphabetize: { order: 'asc' },
-        groups: [['builtin', 'external', 'internal']],
+        'newlines-between': 'always',
+        groups: ['external', 'internal', 'parent', 'index', 'sibling'],
       },
     ],
   },
