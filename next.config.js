@@ -7,6 +7,7 @@ const config = {
       '@boot': path.join(__dirname, 'src/ui/boot'),
       '@components': path.join(__dirname, 'src/ui/components'),
       '@config': path.join(__dirname, 'src/core/config'),
+      '@hocs': path.join(__dirname, 'src/ui/hocs'),
       '@hooks': path.join(__dirname, 'src/ui/hooks'),
       '@pages': path.join(__dirname, 'src/pages'),
       '@public': path.join(__dirname, './public'),

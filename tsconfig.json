@@ -18,6 +18,7 @@
       "@boot/*": ["src/ui/boot/*"],
       "@components/*": ["src/ui/components/*"],
       "@config/*": ["src/core/config/*"],
+      "@hocs/*": ["src/ui/hocs/*"],
       "@hooks/*": ["src/ui/hooks/*"],
       "@pages/*": ["src/pages/*"],
       "@public/*": ["./public/*"],
