@@ -29,6 +29,10 @@ module.exports = {
       tsx: true,
     },
   },
+  globals: {
+    React: true,
+    JSX: true,
+  },
   settings: {
     react: {
       version: 'detect',
