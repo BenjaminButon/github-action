@@ -12,22 +12,23 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@boot/*": ["src/ui/boot/*"],
+      "@components/*": ["src/ui/components/*"],
+      "@config/*": ["src/core/config/*"],
+      "@hooks/*": ["src/ui/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@public/*": ["./public/*"],
+      "@services/*": ["src/core/services/*"],
+      "@store/*": ["src/core/store/*"],
+      "@styles/*": ["src/ui/styles/*"],
+      "@typings/*": ["src/core/typings/*"],
+      "@utils/*": ["src/core/utils/*"],
+      "@views/*": ["src/ui/views/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "paths": {
-    "@boot/*": ["./src/ui/utils/*"],
-    "@components/*": ["./src/ui/components/*"],
-    "@config/*": ["./src/core/config/*"],
-    "@hooks/*": ["./src/ui/hooks/*"],
-    "@pages/*": ["./src/pages/*"],
-    "@public/*": ["./public/*"],
-    "@services/*": ["./src/core/services/*"],
-    "@store/*": ["./src/core/store/*"],
-    "@styles/*": ["./src/ui/styles/*"],
-    "@typings/*": ["./src/core/typings/*"],
-    "@utils/*": ["./src/core/utils/*"],
-    "@views/*": ["./src/ui/views/*"]
-  },
   "exclude": ["node_modules"]
 }

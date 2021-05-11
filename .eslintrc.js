@@ -33,6 +33,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/parser': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
       typescript: {},
     },
