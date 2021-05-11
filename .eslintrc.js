@@ -82,5 +82,6 @@ module.exports = {
         groups: ['external', 'internal', 'parent', 'index', 'sibling'],
       },
     ],
+    'import/extensions': 'off',
   },
 }
