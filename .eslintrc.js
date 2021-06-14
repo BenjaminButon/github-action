@@ -50,6 +50,13 @@ module.exports = {
       'error',
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
+    'react/prop-types': 'off',
+    'react/jsx-props-no-spreading': [
+      'error',
+      {
+        html: 'ignore',
+      },
+    ],
     'max-len': ['error', 120],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
