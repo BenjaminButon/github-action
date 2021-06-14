@@ -20,9 +20,6 @@ const config = {
     }
     return config
   },
-  experimental: {
-    documentMiddleware: true,
-  },
   future: {
     webpack5: true,
   },
