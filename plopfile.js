@@ -1,4 +1,4 @@
-module.exports = function (plop) {
+module.exports = (plop) => {
   // create your generators here
 
   // Pages
@@ -15,18 +15,13 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: 'src/pages/{{pascalCase name}}/index.tsx',
+        path: 'src/pages/{{name}}/index.tsx',
         templateFile: 'plop-templates/page/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/pages/{{pascalCase name}}.tsx',
+        path: '__tests__/pages/{{name}}.tsx',
         templateFile: 'plop-templates/page/index.test.tsx.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/pages/{{pascalCase name}}/style.module.scss',
-        templateFile: 'plop-templates/style.module.scss.hbs',
       },
     ],
   })
