@@ -20,9 +20,6 @@ const config = {
     }
     return config
   },
-  future: {
-    webpack5: true,
-  },
   reactStrictMode: true,
 }
 

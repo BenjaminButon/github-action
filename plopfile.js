@@ -20,7 +20,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: '__tests__/pages/{{name}}.tsx',
+        path: 'src/pages/{{name}}/index.test.tsx',
         templateFile: 'plop-templates/page/index.test.tsx.hbs',
       },
     ],
@@ -40,13 +40,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/core/services/{{camelCase name}}.ts',
-        templateFile: 'plop-templates/service/service.ts.hbs',
+        path: 'src/core/services/{{kebabCase name}}/index.ts',
+        templateFile: 'plop-templates/service/index.ts.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/core/services/{{camelCase name}}.test.ts',
-        templateFile: 'plop-templates/service/service.test.ts.hbs',
+        path: 'src/core/services/{{kebabCase name}}/index.test.ts',
+        templateFile: 'plop-templates/service/index.test.ts.hbs',
       },
     ],
   })
@@ -63,12 +63,12 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/core/store/{{camelCase name}}/index.ts',
+        path: 'src/core/store/{{kebabCase name}}/index.ts',
         templateFile: 'plop-templates/store/slice.ts.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/core/store/{{camelCase name}}/index.test.ts',
+        path: 'src/core/store/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/store/slice.test.ts.hbs',
       },
       {
@@ -87,7 +87,7 @@ module.exports = (plop) => {
         type: 'append',
         path: 'src/core/store/rootReducer.ts',
         pattern: '/* PLOP_INJECT_IMPORT */',
-        template: `import {{camelCase name}} from './{{camelCase name}}'`,
+        template: `import {{camelCase name}} from './{{kebabCase name}}'`,
       },
       {
         type: 'append',
@@ -110,12 +110,12 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/core/utils/{{camelCase name}}.ts',
+        path: 'src/core/utils/{{kebabCase name}}/index.ts',
         templateFile: 'plop-templates/util/index.ts.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/core/utils/{{camelCase name}}.test.ts',
+        path: 'src/core/utils/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/util/index.test.ts.hbs',
       },
     ],
@@ -135,8 +135,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/boot/{{pascalCase name}}.tsx',
-        templateFile: 'plop-templates/boot/boot.tsx.hbs',
+        path: 'src/ui/boot/{{kebabCase name}}/index.tsx',
+        templateFile: 'plop-templates/boot/index.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/ui/boot/{{kebabCase name}}/index.test.tsx',
+        templateFile: 'plop-templates/boot/index.test.tsx.hbs',
       },
     ],
   })
@@ -153,17 +158,17 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/components/common/{{pascalCase name}}/index.tsx',
+        path: 'src/ui/components/common/{{kebabCase name}}/index.tsx',
         templateFile: 'plop-templates/component/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/ui/components/common/{{pascalCase name}}.tsx',
-        templateFile: 'plop-templates/component/index.test.tsx.hbs',
+        path: 'src/ui/components/common/{{kebabCase name}}/index.test.tsx',
+        templateFile: 'plop-templates/component/common.test.tsx.hbs',
       },
       {
         type: 'add',
-        path: 'src/ui/components/common/{{pascalCase name}}/style.module.scss',
+        path: 'src/ui/components/common/{{kebabCase name}}/style.module.scss',
         templateFile: 'plop-templates/style.module.scss.hbs',
       },
     ],
@@ -181,17 +186,17 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/components/{{pascalCase name}}/index.tsx',
+        path: 'src/ui/components/{{kebabCase name}}/index.tsx',
         templateFile: 'plop-templates/component/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/ui/components/{{pascalCase name}}.tsx',
+        path: 'src/ui/components/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/component/index.test.tsx.hbs',
       },
       {
         type: 'add',
-        path: 'src/ui/components/{{pascalCase name}}/style.module.scss',
+        path: 'src/ui/components/{{kebabCase name}}/style.module.scss',
         templateFile: 'plop-templates/style.module.scss.hbs',
       },
     ],
@@ -209,13 +214,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/hocs/{{camelCase name}}.tsx',
-        templateFile: 'plop-templates/hoc/hoc.tsx.hbs',
+        path: 'src/ui/hocs/{{kebabCase name}}/index.tsx',
+        templateFile: 'plop-templates/hoc/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/ui/hocs/{{camelCase name}}.tsx',
-        templateFile: 'plop-templates/hoc/hoc.test.tsx.hbs',
+        path: 'src/ui/hocs/{{kebabCase name}}/index.test.tsx',
+        templateFile: 'plop-templates/hoc/index.test.tsx.hbs',
       },
     ],
   })
@@ -232,8 +237,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/hooks/{{camelCase name}}.ts',
-        templateFile: 'plop-templates/hook.ts.hbs',
+        path: 'src/ui/hooks/{{kebabCase name}}/index.ts',
+        templateFile: 'plop-templates/index.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/ui/hooks/{{kebabCase name}}/index.test.ts',
+        templateFile: 'plop-templates/index.test.ts.hbs',
       },
     ],
   })
@@ -250,17 +260,17 @@ module.exports = (plop) => {
     actions: [
       {
         type: 'add',
-        path: 'src/ui/views/{{pascalCase name}}/index.tsx',
+        path: 'src/ui/views/{{kebabCase name}}/index.tsx',
         templateFile: 'plop-templates/view/index.tsx.hbs',
       },
       {
         type: 'add',
-        path: '__tests__/ui/views/{{pascalCase name}}.tsx',
+        path: 'src/ui/views/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/view/index.test.tsx.hbs',
       },
       {
         type: 'add',
-        path: 'src/ui/views/{{pascalCase name}}/style.module.scss',
+        path: 'src/ui/views/{{kebabCase name}}/style.module.scss',
         templateFile: 'plop-templates/style.module.scss.hbs',
       },
     ],
