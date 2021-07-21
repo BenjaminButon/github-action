@@ -168,8 +168,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/components/common/{{kebabCase name}}/style.module.scss',
-        templateFile: 'plop-templates/style.module.scss.hbs',
+        path: 'src/ui/components/common/{{kebabCase name}}/styles.module.scss',
+        templateFile: 'plop-templates/styles.module.scss.hbs',
       },
     ],
   })
@@ -196,8 +196,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/components/{{kebabCase name}}/style.module.scss',
-        templateFile: 'plop-templates/style.module.scss.hbs',
+        path: 'src/ui/components/{{kebabCase name}}/styles.module.scss',
+        templateFile: 'plop-templates/styles.module.scss.hbs',
       },
     ],
   })
@@ -270,8 +270,8 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/views/{{kebabCase name}}/style.module.scss',
-        templateFile: 'plop-templates/style.module.scss.hbs',
+        path: 'src/ui/views/{{kebabCase name}}/styles.module.scss',
+        templateFile: 'plop-templates/styles.module.scss.hbs',
       },
     ],
   })

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const FirstPost = (): React.ReactFragment => {
+const FirstPost: React.FC = () => {
   return (
     <>
       <h1>First Post</h1>
