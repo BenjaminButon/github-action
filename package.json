@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx,jsx}'",
-    "lint-fix": "eslint --fix",
+    "lint-fix": "npm run lint --fix",
     "prettier-format": "prettier --write",
     "stylelint": "stylelint ./src/**/*.{css,scss,sass,less}",
-    "stylelint-fix": "stylelint --fix",
+    "stylelint-fix": "npm run stylelint --fix",
     "test": "jest",
     "generate": "plop",
     "prepare": "husky install"
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@linkup/eslint-config-next-js": "github:LinkUpStudio/eslint-config-next-js.git#v1.0",
+    "@linkup/eslint-config-next-js": "github:LinkUpStudio/eslint-config-next-js.git#v1.0.1",
     "@types/enzyme": "^3.10.9",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.24",
