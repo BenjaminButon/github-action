@@ -1,19 +1,24 @@
+const { pathsToModuleNameMapper } = require('ts-jest/utils')
+
+const { compilerOptions } = require('./tsconfig.json')
+
 module.exports = {
-  collectCoverageFrom: [
-    '**/*.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**',
-  ],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageProvider: 'v8',
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
   },
-  transformIgnorePatterns: [
-    '/node_modules/',
-    '^.+\\.module\\.(css|sass|scss)$',
-  ],
-  moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
-  },
+  moduleDirectories: ['node_modules', 'src'],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/',
+  }),
+  setupFiles: ['<rootDir>/jest.setup.js'],
+  testMatch: ['<rootDir>/**/*.test.{js,jsx,ts,tsx}'],
 }
