@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,53 +15,21 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@boot/*": [
-        "src/ui/boot/*"
-      ],
-      "@components/*": [
-        "src/ui/components/*"
-      ],
-      "@config/*": [
-        "src/core/config/*"
-      ],
-      "@hocs/*": [
-        "src/ui/hocs/*"
-      ],
-      "@hooks/*": [
-        "src/ui/hooks/*"
-      ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
-      "@public/*": [
-        "./public/*"
-      ],
-      "@services/*": [
-        "src/core/services/*"
-      ],
-      "@store/*": [
-        "src/core/store/*"
-      ],
-      "@styles/*": [
-        "src/ui/styles/*"
-      ],
-      "@typings/*": [
-        "src/core/typings/*"
-      ],
-      "@utils/*": [
-        "src/core/utils/*"
-      ],
-      "@views/*": [
-        "src/ui/views/*"
-      ]
+      "@boot/*": ["src/ui/boot/*"],
+      "@components/*": ["src/ui/components/*"],
+      "@config/*": ["src/core/config/*"],
+      "@hocs/*": ["src/ui/hocs/*"],
+      "@hooks/*": ["src/ui/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@public/*": ["./public/*"],
+      "@services/*": ["src/core/services/*"],
+      "@store/*": ["src/core/store/*"],
+      "@styles/*": ["src/ui/styles/*"],
+      "@typings/*": ["src/core/typings/*"],
+      "@utils/*": ["src/core/utils/*"],
+      "@views/*": ["src/ui/views/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
