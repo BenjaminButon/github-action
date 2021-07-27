@@ -20,7 +20,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/pages/{{name}}/index.test.tsx',
+        path: '__tests__/pages/{{name}}/index.test.tsx',
         templateFile: 'plop-templates/page/index.test.tsx.hbs',
       },
     ],
@@ -45,7 +45,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/core/services/{{kebabCase name}}/index.test.ts',
+        path: '__tests__/core/services/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/service/index.test.ts.hbs',
       },
     ],
@@ -68,7 +68,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/core/store/{{kebabCase name}}/index.test.ts',
+        path: '__tests__/core/store/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/store/slice.test.ts.hbs',
       },
       {
@@ -115,7 +115,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/core/utils/{{kebabCase name}}/index.test.ts',
+        path: '__tests__/core/utils/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/util/index.test.ts.hbs',
       },
     ],
@@ -140,7 +140,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/boot/{{kebabCase name}}/index.test.tsx',
+        path: '__tests__/ui/boot/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/boot/index.test.tsx.hbs',
       },
     ],
@@ -163,7 +163,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/components/common/{{kebabCase name}}/index.test.tsx',
+        path: '__tests__/ui/components/common/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/component/common.test.tsx.hbs',
       },
       {
@@ -191,7 +191,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/components/{{kebabCase name}}/index.test.tsx',
+        path: '__tests__/ui/components/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/component/index.test.tsx.hbs',
       },
       {
@@ -219,7 +219,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/hocs/{{kebabCase name}}/index.test.tsx',
+        path: '__tests__/ui/hocs/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/hoc/index.test.tsx.hbs',
       },
     ],
@@ -242,7 +242,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/hooks/{{kebabCase name}}/index.test.ts',
+        path: '__tests__/ui/hooks/{{kebabCase name}}/index.test.ts',
         templateFile: 'plop-templates/index.test.ts.hbs',
       },
     ],
@@ -265,7 +265,7 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: 'src/ui/views/{{kebabCase name}}/index.test.tsx',
+        path: '__tests__/ui/views/{{kebabCase name}}/index.test.tsx',
         templateFile: 'plop-templates/view/index.test.tsx.hbs',
       },
       {
