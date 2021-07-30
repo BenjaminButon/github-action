@@ -704,9 +704,9 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@linkup/eslint-config-next-js@github:LinkUpStudio/eslint-config-next-js.git#v1.0.2":
-  version "1.0.2"
-  resolved "https://codeload.github.com/LinkUpStudio/eslint-config-next-js/tar.gz/1fbbdbd40dedf3c84a65a43c1e8c47d93a72f60f"
+"@linkup/eslint-config-next-js@github:LinkUpStudio/eslint-config-next-js.git#v1.0.3":
+  version "1.0.3"
+  resolved "https://codeload.github.com/LinkUpStudio/eslint-config-next-js/tar.gz/9080c0f1301d72dd1861b5ccf702969aadcbf700"
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.2"
     "@typescript-eslint/parser" "^4.28.2"
