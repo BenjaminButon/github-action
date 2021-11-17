@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         <h1 className="title">
           Read{' '}
           <Link href="/posts/first-post">
-            <p>this page!</p>
+            <a>this page!</a>
           </Link>
         </h1>
 
