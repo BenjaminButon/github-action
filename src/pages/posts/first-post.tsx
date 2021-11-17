@@ -6,7 +6,7 @@ const FirstPost: React.FC = () => {
       <h1>First Post</h1>
       <h2>
         <Link href="/">
-          <p>Back to home</p>
+          <a>Back to home</a>
         </Link>
       </h2>
     </>
