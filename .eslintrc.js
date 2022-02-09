@@ -1,7 +1,14 @@
 module.exports = {
   extends: ['@linkup/next-js'],
-  plugins: ['prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
-}
+  overrides: [
+    {
+      files: ['./src/core/store/*/index.ts'],
+      rules: {
+        'no-param-reassign': [
+          'error',
+          { props: true, ignorePropertyModificationsFor: ['state'] },
+        ],
+      },
+    },
+  ],
+};
