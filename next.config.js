@@ -17,7 +17,6 @@ const config = {
       '@typings': path.join(__dirname, 'src/core/typings'),
       '@utils': path.join(__dirname, 'src/core/utils'),
       '@views': path.join(__dirname, 'src/ui/views'),
-      process: 'process/browser',
     };
     return config;
   },
